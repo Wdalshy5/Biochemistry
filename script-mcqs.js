@@ -21,8 +21,95 @@ let questions = [
         "correctAnswer": 2,
         "explanation": "Phosphoglucose isomerase catalyzes the conversion of glucose-6-phosphate to fructose-6-phosphate in the second step of glycolysis."
     },
-    // ... existing questions
-];
+    {
+        "question": "What is the net ATP gain from one molecule of glucose in glycolysis?",
+        "options": [
+            "1 ATP",
+            "2 ATP",
+            "4 ATP",
+            "6 ATP"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The net ATP gain in glycolysis is 2 ATP, as 4 ATP molecules are produced but 2 are consumed during the process."
+    },
+    {
+        "question": "Which molecule is produced in the final step of glycolysis?",
+        "options": [
+            "Glucose-6-phosphate",
+            "Pyruvate",
+            "Fructose-1,6-bisphosphate",
+            "Acetyl-CoA"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The final step of glycolysis produces pyruvate, which can then enter the citric acid cycle or undergo fermentation."
+    },
+    {
+        "question": "What is the role of NAD+ in glycolysis?",
+        "options": [
+            "To donate electrons during the oxidation of glyceraldehyde-3-phosphate",
+            "To hydrolyze ATP",
+            "To form acetyl-CoA",
+            "To assist in the isomerization of glucose"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NAD+ functions as an electron acceptor during the oxidation of glyceraldehyde-3-phosphate to form NADH, which is essential for glycolysis."
+    },
+    {
+        "question": "What is the function of phosphofructokinase in glycolysis?",
+        "options": [
+            "To phosphorylate glucose",
+            "To cleave fructose-1,6-bisphosphate into two 3-carbon molecules",
+            "To convert fructose-6-phosphate to fructose-1,6-bisphosphate",
+            "To convert 3-phosphoglycerate to 2-phosphoglycerate"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Phosphofructokinase catalyzes the phosphorylation of fructose-6-phosphate to form fructose-1,6-bisphosphate, a key regulatory step in glycolysis."
+    },
+    {
+        "question": "Which of the following molecules inhibits phosphofructokinase?",
+        "options": [
+            "ATP",
+            "ADP",
+            "Citrate",
+            "AMP"
+        ],
+        "correctAnswer": 0,
+        "explanation": "ATP inhibits phosphofructokinase (PFK), slowing down glycolysis when cellular energy levels are high."
+    },
+    {
+        "question": "How many molecules of NADH are produced during glycolysis?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correctAnswer": 1,
+        "explanation": "During glycolysis, 2 molecules of NADH are produced, one per each molecule of glyceraldehyde-3-phosphate oxidized."
+    },
+    {
+        "question": "Which of the following steps in glycolysis is irreversible?",
+        "options": [
+            "Phosphorylation of glucose",
+            "Conversion of glucose-6-phosphate to fructose-6-phosphate",
+            "Conversion of 1,3-bisphosphoglycerate to 3-phosphoglycerate",
+            "Cleavage of fructose-1,6-bisphosphate"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The phosphorylation of glucose is an irreversible step, catalyzed by hexokinase (or glucokinase in the liver)."
+    },
+    {
+        "question": "Which molecule is the end product of glycolysis in anaerobic conditions?",
+        "options": [
+            "Acetyl-CoA",
+            "Lactate",
+            "Pyruvate",
+            "Ethanol"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Under anaerobic conditions, the end product of glycolysis is lactate, which is produced through the reduction of pyruvate by NADH."
+    }
+]
 
 let currentQuestion = 0;
 let score = 0;
