@@ -1,0 +1,106 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --btn-bg: #4CAF50;
+    --btn-text: #fff;
+    --option-bg: #fff;
+    --option-border: #ddd;
+}
+
+.dark-theme {
+    --bg-color: #333;
+    --text-color: #f0f0f0;
+    --btn-bg: #4CAF50;
+    --btn-text: #fff;
+    --option-bg: #444;
+    --option-border: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--option-bg);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option {
+    background-color: var(--option-bg);
+    border: 1px solid var(--option-border);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+#progress-bar {
+    width: 100%;
+    background-color: var(--option-border);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress {
+    width: 0;
+    height: 20px;
+    background-color: var(--btn-bg);
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
